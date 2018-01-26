@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__top">
+        <a class="logo">
+          <img class="logo__img">
+        </a>
+         <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item ">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__promo">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+      <div class="page-header__bottom">
+        <h1 class="page-header__name">Оставьте свой отзыв</h1>
+        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+      </div>
+    </header>
+
+    <main class="form">
+      <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="form__slogan" >Представьтесь:</h2>
+        <label>
+          <span class="form__name">имя*</span>
+          <input class="form__input" type="text" name="name" value="Петр">
+        </label>
+        <label>
+          <span class="form__name">фамилия*</span>
+          <input class="form__input" type="text" name="surname" value="Иванов">
+        </label>
+        <label>
+          <span class="form__name">отчество*</span>
+          <input class="form__input" type="text" name="patronymic" value="Александрович">
+        </label>
+      </form>
+      <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="form__slogan" >контактная информация:</h2>
+        <label>
+          <span class="form__name">контактный телефон*</span>
+          <input class="form__input" type="text" name="tel">
+        </label>
+        <label>
+          <span class="form__name">контактная почта*</span>
+          <input class="form__input" type="mail" name="mail">
+        </label>
+      </form>
+      <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="form__slogan" >ваше общее впечатление:</h2>
+        <label>
+          <input class="form__input" type="radio" name="radio">
+          <span class="form__name">Скорее положительное</span>
+        </label>
+        <label>
+          <input class="form__input" type="radio" name="radio">
+          <span class="form__name">Скорее отрицательное</span>
+        </label>
+        <label>
+          <input class="form__input" type="radio" name="radio">
+          <span class="form__name">Затрудняюсь ответить</span>
+        </label>
+      </form>
+      <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="form__slogan" >посещенные достопримечательности:</h2>
+        <label>
+          <input class="form__input" type="checkbox" name="checkbox">
+          <span class="form__name">Мост Дьявола</span>
+        </label>
+        <label>
+          <input class="form__input" type="checkbox" name="checkbox">
+          <span class="form__name">Слайд-парк</span>
+        </label>
+        <label>
+          <input class="form__input" type="checkbox" name="checkbox">
+          <span class="form__name">Гора-Колокол</span>
+        </label>
+        <label>
+          <input class="form__input" type="checkbox" name="checkbox">
+          <span class="form__name">Красные скалы</span>
+        </label>
+      </form>
+      <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="form__slogan" >опишите свои эмоции:</h2>
+        <textarea class="textarea" rows="6">Опишите подробно свои восторги</textarea>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+        <a class="page-footer__name" href="">#VISITSEDONA</a>
+        <div class="page-footer__social">
+          <ul class="social-links">
+            <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
+            <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
+            <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__bottom">
+          <span class="page-footer__developer">разработано</span>
+          <svg class="page-footer__developer-logo"></svg>
+        </div>
+    </footer>
+  </body>
+</html>

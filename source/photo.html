@@ -6,79 +6,91 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__top"></div>
-        <a class="top__logo">
-          <img class="top__logo-image">
+      <div class="page-header__top">
+        <a class="logo">
+          <img class="logo__img">
         </a>
-         <nav class="top__main-nav">
+         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item ">
-                  <a>Главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="photo.html">Фото и видео</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="form.html">Форма отзыва</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="#">HTML Academy</a>
-                </li>
-              </ul>
-            </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item ">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
         </nav>
       </div>
-      <div class="page-header__main">
+      <div class="page-header__promo">
+        <img src="" alt="">
+        <img src="" alt="">
         <img src="" alt="">
       </div>
-      <div class="page-header__footer">
-        <h1>Фото и видео</h1>
+      <div class="page-header__bottom">
+        <h1 class="page-header__name">Фото и видео</h1>
         <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </header>
+
     <main class="page-main">
-      <div class="page-main__section">
-        <img class="section__img" src="" alt="">
-        <h1 class="section__name">Народные просторы</h1>
-        <p class="section__author">Автор фото: Борис</p>
-        <span class="section__like"></span>
-        <p class="section__number-like"><b>1350</b></p>
+      <div class="photo">
+        <img class="photo__img" src="" alt="">
+        <h2 class="photo__name">Народные просторы</h2>
+        <div class="photo__author">Автор фото: Борис</div>
+        <span class="like">
+          <span class="like__number"><b>1350</b></span>
+        </span>
       </div>
-      <div class="page-main__section">
-        <img class="section__img" src="" alt="">
-        <h1 class="section__name">Местная растительность</h1>
-        <p class="section__author">Автор фото: Сергей</p>
-        <span class="section__like"></span>
-        <p class="section__number-like"><b>143</b></p>
+      <div class="photo">
+        <img class="photo__img" src="" alt="">
+        <h2 class="photo__name">Местная растительность</h2>
+        <div class="photo__author">Автор фото: Сергей</div>
+        <span class="like">
+          <span class="like__number"><b>143</b></span>
+        </span>
       </div>
-      <div class="page-main__section">
-        <img class="section__img" src="" alt="">
-        <h1 class="section__name">Дорога на север</h1>
-        <p class="section__author">Автор фото: Петр</p>
-        <span class="section__like"></span>
-        <p class="section__number-like"><b>96</b></p>
+      <div class="photo">
+        <img class="photo__img" src="" alt="">
+        <h2 class="photo__name">Дорога на север</h2>
+        <div class="photo__author">Автор фото: Петр</div>
+        <span class="like">
+          <span class="like__number"><b>96</b></span>
+        </span>
       </div>
-      <div class="page-main__section">
-        <img class="section__img" src="" alt="">
-        <h1 class="section__name">Мост дьявола</h1>
-        <p class="section__author">Автор фото: Антон</p>
-        <span class="section__like"></span>
-        <p class="section__number-like"><b>254</b></p>
+      <div class="photo">
+        <img class="photo__img" src="" alt="">
+        <h2 class="photo__name">Мост дьявола</h2>
+        <div class="photo__author">Автор фото: Антон</div>
+        <span class="like">
+          <span class="like__number"><b>254</b></span>
+        </span>
+      </div>
+      <div class="video">
+        <h3 class="video__name">Все еще сомневаетесь?</h3>
+        <p class="video__slogan">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
     </main>
+
     <footer class="page-footer">
-      <h1 class="page-footer__name">#VISITSEDONA</h1>
-      <div class="page-footer__social">
-        <img class="tw" src="" alt="">
-        <img class="fb" src="" alt="">
-        <img class="tube" src="" alt="">
-      </div>
-      <div class="page-footer__bottom">
-        <h1 class="bottom__name">разработано</h1>
-        <span class="bottom__icon"></span>
-      </div>
+        <a class="page-footer__name" href="">#VISITSEDONA</a>
+        <div class="page-footer__social">
+          <ul class="social-links">
+            <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
+            <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
+            <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__bottom">
+          <span class="page-footer__developer">разработано</span>
+          <svg class="page-footer__developer-logo"></svg>
+        </div>
     </footer>
   </body>
 </html>
