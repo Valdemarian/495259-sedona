@@ -14,23 +14,21 @@
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item ">
-              <a>Главная</a>
+              <a class="links" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="links" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="links" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
+              <a class="links" href="#">HTML Academy</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="page-header__promo">
-        <img src="" alt="">
-        <img src="" alt="">
         <img src="" alt="">
       </div>
       <div class="page-header__bottom">
@@ -42,62 +40,62 @@
     <main class="form">
       <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
         <h2 class="form__slogan" >Представьтесь:</h2>
-        <label>
-          <span class="form__name">имя*</span>
-          <input class="form__input" type="text" name="name" value="Петр">
+        <label class="field-text">
+          <span class="field-text__name">имя*</span>
+          <input class="field-text__input" type="text" name="name" value="Петр">
         </label>
-        <label>
-          <span class="form__name">фамилия*</span>
-          <input class="form__input" type="text" name="surname" value="Иванов">
+        <label class="field-text">
+          <span class="field-text__name">фамилия*</span>
+          <input class="field-text__input" type="text" name="surname" value="Иванов">
         </label>
-        <label>
-          <span class="form__name">отчество*</span>
-          <input class="form__input" type="text" name="patronymic" value="Александрович">
+        <label class="field-text">
+          <span class="field-text__name">отчество*</span>
+          <input class="field-text__input" type="text" name="patronymic" value="Александрович">
         </label>
       </form>
       <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
         <h2 class="form__slogan" >контактная информация:</h2>
-        <label>
-          <span class="form__name">контактный телефон*</span>
-          <input class="form__input" type="text" name="tel">
+        <label class="field-text">
+          <span class="field-text__name">контактный телефон*</span>
+          <input class="field-text__input" type="tel" name="tel">
         </label>
-        <label>
-          <span class="form__name">контактная почта*</span>
-          <input class="form__input" type="mail" name="mail">
+        <label class="field-text">
+          <span class="field-text__name">контактная почта*</span>
+          <input class="field-text__input" type="email" name="mail">
         </label>
       </form>
       <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
         <h2 class="form__slogan" >ваше общее впечатление:</h2>
-        <label>
-          <input class="form__input" type="radio" name="radio">
-          <span class="form__name">Скорее положительное</span>
+        <label class="field-radio">
+          <input class="field-radio__input" type="radio" name="radio">
+          <span class="field-radio__name">Скорее положительное</span>
         </label>
-        <label>
-          <input class="form__input" type="radio" name="radio">
-          <span class="form__name">Скорее отрицательное</span>
+        <label class="field-radio">
+          <input class="field-radio__input" type="radio" name="radio">
+          <span class="field-radio__name">Скорее отрицательное</span>
         </label>
-        <label>
-          <input class="form__input" type="radio" name="radio">
-          <span class="form__name">Затрудняюсь ответить</span>
+        <label class="field-radio">
+          <input class="field-radio__input" type="radio" name="radio">
+          <span class="field-radio__name">Затрудняюсь ответить</span>
         </label>
       </form>
       <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
         <h2 class="form__slogan" >посещенные достопримечательности:</h2>
-        <label>
-          <input class="form__input" type="checkbox" name="checkbox">
-          <span class="form__name">Мост Дьявола</span>
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" name="checkbox">
+          <span class="field-checkbox__name">Мост Дьявола</span>
         </label>
-        <label>
-          <input class="form__input" type="checkbox" name="checkbox">
-          <span class="form__name">Слайд-парк</span>
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" name="checkbox">
+          <span class="field-checkbox__name">Слайд-парк</span>
         </label>
-        <label>
-          <input class="form__input" type="checkbox" name="checkbox">
-          <span class="form__name">Гора-Колокол</span>
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" name="checkbox">
+          <span class="field-checkbox__name">Гора-Колокол</span>
         </label>
-        <label>
-          <input class="form__input" type="checkbox" name="checkbox">
-          <span class="form__name">Красные скалы</span>
+        <label class="field-checkbox">
+          <input class="field-checkbox__input" type="checkbox" name="checkbox">
+          <span class="field-checkbox__name">Красные скалы</span>
         </label>
       </form>
       <form class="form__section" action="https://echo.htmlacademy.ru" method="get">
@@ -111,8 +109,8 @@
         <div class="page-footer__social">
           <ul class="social-links">
             <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
-            <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
-            <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
+            <li class="social-links__item"><a href="" class="social-links__link">Мы в Фейсбук</a></li>
+            <li class="social-links__item"><a href="" class="social-links__link">Мы в Ютуб</a></li>
           </ul>
         </div>
         <div class="page-footer__bottom">
