@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Vladimir Hrenov](https://up.htmlacademy.ru/adaptive/13/user/495259).
-* Наставник: `Неизвестно`.
+* Наставник: Николай Громов.
 
 ---
 
