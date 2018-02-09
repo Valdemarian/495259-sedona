@@ -1,0 +1,13 @@
+.page-footer {
+  text-align: center;
+
+  &__name{
+    display: inline-block;
+    font-weight: bold;
+    color: #000;
+  }
+
+  &__developer{
+    text-transform: uppercase;
+  }
+}

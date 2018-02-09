@@ -1,0 +1,41 @@
+.main-nav{
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: $main-color;
+  }
+
+  &__links {
+    display: block;
+    min-height: 56px;
+    line-height: 54px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: $font-size + 4;
+    color: #fff;
+    border-bottom: 1px solid $main-color--dark;
+    border-top: 1px solid $main-color--light;
+  }
+
+  &__item {
+
+    &:first-child{
+
+      .main-nav__links {
+        border-top-color: transparent;
+      }
+    }
+
+    &:last-child{
+
+      .main-nav__links {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}

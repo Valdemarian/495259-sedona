@@ -1,0 +1,15 @@
+.page-header {
+
+  &__promo {
+    min-height: 388px;
+    min-width: 320px;
+    background: $main-color url(../img/bg-back-mobile@1x.jpg) no-repeat center;
+  }
+
+  &__bottom {
+    min-height: 220px;
+    min-width: 320px;
+    background: #fff;
+    text-align: center;
+  }
+}

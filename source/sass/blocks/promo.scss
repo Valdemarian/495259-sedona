@@ -1,0 +1,53 @@
+.promo {
+
+  &__section {
+    margin: 0;
+    min-height: 190px;
+    min-width: 320px;
+    background: $main-color;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__section--grey {
+    min-height: 167px;
+    min-width: 320px;
+    color: #000;
+    background: #EFEFEF;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  &__section-img {
+    min-height: 260px;
+    min-width: 320px;
+    background: url(../img/main-city-mobile@1x.jpg) no-repeat center;
+  }
+
+  &__inner-block {
+    text-align: left;
+  }
+
+  &__inner-block-name {
+    margin-left: 70px;
+  }
+
+  &__inner-block-descr {
+    margin-left: 70px;
+  }
+
+  &__section-img-devil {
+    min-height: 260px;
+    min-width: 320px;
+    background: url(../img/main-bridge-mobile@1x.jpg) no-repeat center;
+  }
+
+  &__hotel {
+    text-align: center;
+  }
+
+  &__map {
+    min-height: 350px;
+    min-width: 320px;
+    background: url(../img/bg-map-mobile@1x.jpg) no-repeat center;
+  }
+}
