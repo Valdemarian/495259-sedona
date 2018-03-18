@@ -1,5 +1,5 @@
 {
-  "name": "sedona",
+  "name": "sed",
   "version": "13.0.0",
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
@@ -39,5 +39,16 @@
   },
   "dependencies": {
     "gulp-wait": "0.0.2"
-  }
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valdemarian/495259-sedona.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valdemarian/495259-sedona/issues"
+  },
+  "homepage": "https://github.com/Valdemarian/495259-sedona#readme"
 }

@@ -1,5 +1,8 @@
 .page-header {
 
+  display:flex;
+  flex-direction: column;
+
   &__promo {
     min-height: 388px;
     min-width: 320px;
@@ -13,3 +16,15 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 320px){
+  .page-header{
+    &__top{
+      display: flex;
+    }
+  }
+}
+
+
+
+

@@ -1,4 +1,6 @@
-.main-nav{
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
 
   &__list {
     list-style: none;
@@ -38,4 +40,24 @@
       }
     }
   }
+}
+
+
+@media screen and (min-width: 320px){
+  .main-nav{
+    width: auto;
+    margin: 0;
+  }
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+  }
+
+  &__list{
+    border-color: #000;
+  }
+
 }

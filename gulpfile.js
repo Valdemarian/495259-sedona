@@ -29,6 +29,7 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
+
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html").on("change", server.reload);
 });
