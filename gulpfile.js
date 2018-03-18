@@ -6,6 +6,7 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var ghPages = require('gulp-gh-pages');
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
@@ -18,6 +19,14 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
+});
+
+gulp.task('deploy', function() {
+  return gulp.src([
+      'source/**/*',
+      '!source/sass/**/*',
+    ])
+    .pipe(ghPages());
 });
 
 gulp.task("serve", ["style"], function() {
