@@ -2,16 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <a class="logo">
-          <img class="logo__img">
+       <!--  <a class="logo">
+          <img class="logo__img" src="img/logo-mobile.png">
         </a>
-        <nav class="main-nav">
+ -->        <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <ul class="main-nav__list">
               <li class="main-nav__item ">
@@ -19,6 +21,12 @@
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__links" href="photo.html">Фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+              <a class="logo">
+          <img class="logo__img" src="img/logo-mobile.png">
+        </a>
+
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__links" href="form.html">Форма отзыва</a>
@@ -29,59 +37,72 @@
             </ul>
         </nav>
       </div>
+      <div class="page-header__bordure"></div>
       <div class="page-header__promo">
       </div>
       <div class="page-header__bottom">
         <h1 class="page-header__name">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+        <p class="page-header__name-slogan">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
       </div>
     </header>
 
     <main class="promo">
-      <div class="promo__section">
-        <h2 class="promo__section-name">Настоящий городок</h2>
-        <span class="promo__section-num">-№1-</span>
-        <p class="promo__section-slogan">Седона не аттракцион для туристов, там течет своя жизнь.</p>
-      </div>
-        <div class="promo__section-img">
+      <div class="promo__wrapper">
+        <div class="promo__section promo__section--hotel">
+          <h2 class="promo__section-name">Настоящий городок</h2>
+          <span class="promo__section-num">-№1-</span>
+          <p class="promo__section-slogan">Седона не аттракцион для туристов, там течет своя жизнь.</p>
         </div>
-        <div class="promo__inner-block">
-          <span class="promo__inner-block-icon"></span>
-          <h3 class="promo__inner-block-name">Жилье</h3>
-          <p class="promo__inner-block-descr">Рекомендуем пожить в настоящем отеле, все как в кино!</p>
+        <div class="promo__section-img-hotel">
         </div>
-        <div class="promo__inner-block">
-          <span class="promo__inner-block-icon"></span>
-          <h3 class="promo__inner-block-name">Сувениры</h3>
-          <p class="promo__inner-block-descr">Не только китайского, но и местного производства!</p>
+      </div>
+
+        <div class="promo__wrapper promo__wrapper--premium">
+          <div class="promo__inner-block">
+            <span class="promo__inner-block-icon"></span>
+            <h3 class="promo__inner-block-name">Жилье</h3>
+            <p class="promo__inner-block-descr">Рекомендуем пожить в настоящем отеле, все как в кино!</p>
+          </div>
+          <div class="promo__inner-block">
+            <span class="promo__inner-block-icon"></span>
+            <h3 class="promo__inner-block-name">Сувениры</h3>
+            <p class="promo__inner-block-descr">Не только китайского, но и местного производства!</p>
+          </div>
+          <div class="promo__inner-block">
+            <span class="promo__inner-block-icon"></span>
+            <h3 class="promo__inner-block-name">Еда</h3>
+            <p class="promo__inner-block-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
         </div>
-        <div class="promo__inner-block">
-          <span class="promo__inner-block-icon"></span>
-          <h3 class="promo__inner-block-name">Еда</h3>
-          <p class="promo__inner-block-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+
+      <div class="promo__wrapper">
+        <div class="promo__section promo__section--devil">
+          <h2 class="promo__section-name">Там есть мост дьявола!</h2>
+          <span class="promo__section-num">-№2-</span>
+          <p class="promo__section-slogan">Да, по нему можно пройтись! Если вы осмелитесь, конечно</p>
         </div>
-      <div class="promo__section">
-        <h2 class="promo__section-name">Там есть мост дьявола!</h2>
-        <span class="promo__section-num">-№2-</span>
-        <p class="promo__section-slogan">Да, по нему можно пройтись! Если вы осмелитесь, конечно</p>
-      </div>
-        <div class="promo__section-img-devil">
+          <div class="promo__section-img-devil">
+          </div>
         </div>
-      <div class="promo__section  promo__section--grey">
-        <h2 class="promo__section-name">Небольшая площадь</h2>
-        <span class="promo__section-num">-№3-</span>
-        <p class="promo__section-slogan">Все интересные места находятся очень близко</p>
+
+      <div class="promo__wrapper">
+        <div class="promo__section  promo__section--grey">
+          <h2 class="promo__section-name">Небольшая площадь</h2>
+          <span class="promo__section-num">-№3-</span>
+          <p class="promo__section-slogan">Все интересные места находятся очень близко</p>
+        </div>
+        <div class="promo__section  promo__section--grey">
+          <h2 class="promo__section-name">Красивая дорога</h2>
+          <span class="promo__section-num">-№4-</span>
+          <p class="promo__section-slogan">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="promo__section  promo__section--grey">
+          <h2 class="promo__section-name">Мало туристов</h2>
+          <span class="promo__section-num">-№5-</span>
+          <p class="promo__section-slogan">Большинство едет в гранд каньон и толпится там</p>
+        </div>
       </div>
-      <div class="promo__section  promo__section--grey">
-        <h2 class="promo__section-name">Красивая дорога</h2>
-        <span class="promo__section-num">-№4-</span>
-        <p class="promo__section-slogan">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-      </div>
-      <div class="promo__section  promo__section--grey">
-        <h2 class="promo__section-name">Мало туристов</h2>
-        <span class="promo__section-num">-№5-</span>
-        <p class="promo__section-slogan">Большинство едет в гранд каньон и толпится там</p>
-      </div>
+
       <div class="promo__hotel">
         <h2 class="promo__hotel-name">Заинтересовались?</h2>
         <p class="promo__hotel-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложение гостиниц в седоне</p>
