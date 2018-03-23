@@ -7,4 +7,13 @@
   color: #ffffff;
   display: inline-block;
   margin: 40px;
+
+
+  @media (min-width: $screen-md) {
+    width: 60%;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 33%;
+  }
 }

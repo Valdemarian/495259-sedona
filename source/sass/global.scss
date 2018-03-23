@@ -7,6 +7,9 @@ html{
 *:before {
   box-sizing: inherit;
 }
+h1{
+  margin: 0;
+}
 h2{
   margin: 0;
 }
@@ -15,6 +18,7 @@ p{
 }
 
 body {
+  min-width: 320px;
   margin: 0;
   font-size: $font-size;
   font-family: sans-serif;
