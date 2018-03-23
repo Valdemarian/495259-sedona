@@ -25,6 +25,7 @@ gulp.task('deploy', function() {
   return gulp.src([
       'source/**/*',
       '!source/sass/**/*',
+      '!source/**/README',
     ])
     .pipe(ghPages());
 });
