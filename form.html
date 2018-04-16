@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous">
+    </script>
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+  <script>
+    $(document).ready(function(){
+      var menuLink = $('.menu-link');
+      var link = $('.menu-link__menu-toggle');
+      var menu = $('.main-nav__list')
+
+      menuLink.click(function(){
+        menuLink.toggleClass('menu-link__active');
+        link.toggleClass('menu-link__menu-toggle--active');
+        menu.toggleClass('main-nav__list--active');
+      });
+    });
+  </script>
+
+    <div class="page">
+      <header class="page-header">
+        <div class="page-header__top">
+            <a class="logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/logo-sedona-decktop.svg">
+                <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="sedona">
+              </picture>
+            </a>
+              <nav class="main-nav">
+                <a class="menu-link" href="#menu">
+                  <span class="menu-link__menu-toggle
+                  "></span>
+                </a>
+                <ul class="main-nav__list">
+                  <li class="main-nav__item ">
+                    <a class="main-nav__links" href="index.html">Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__links" href="photo.html">Фото и видео</a>
+                  </li>
+                  <li class="main-nav__item">
+                  <a class="main-nav__links-free">  </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__links" href="form.html">Форма отзыва</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__links" href="https://vk.com/flashinthenight">VALDEMARIAN</a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-header__promo page-header__promo--mini">
+          <img class="page-header__promo-svg-mini" src="img/text-sedona-mini.svg" alt="">
+          <div class="page-header__promo-podval"></div>
+
+        </div>
+        <div class="page-header__bottom">
+          <h1 class="page-header__name">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
+          <p class="page-header__name-slogan">Не Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях!</p>
+        </div>
+      </header>
+
+
+      <form class="form" action="" method="get">
+        <div class="form__fieldset  form__fieldset--name">
+          <h2 class="form__slogan" >Представьтесь:</h2>
+          <label class="form__field-text  form__field-text--name">
+            <span class="form__field-text-name">Имя*</span>
+            <input class="form__field-text-input" type="text" name="name" placeholder="Петр">
+          </label>
+          <label class="form__field-text form__field-text--name">
+            <span class="form__field-text-name">Фамилия*</span>
+            <input class="form__field-text-input" type="text" name="surname" placeholder="Иванов">
+          </label>
+          <label class="form__field-text form__field-text--name">
+            <span class="form__field-text-name">Отчество*</span>
+            <input class="form__field-text-input" type="text" name="patronymic" placeholder="Александрович">
+          </label>
+        </div>
+        <div class="form__fieldset  form__fieldset--contact">
+          <h2 class="form__slogan form__slogan--strikers" >Контактная информация:</h2>
+          <label class="form__field-text  form__field-text--contact">
+            <span class="form__field-text-name">Контактный телефон*</span>
+            <input class="form__field-text-input" type="tel" name="tel" value="+7">
+          </label>
+          <label class="form__field-text  form__field-text--contact">
+            <span class="form__field-text-name">Контактная почта*</span>
+            <input class="form__field-text-input" type="email" name="mail" placeholder="sedona@mail.ru">
+          </label>
+        </div>
+        <div class="form__fieldset  form__fieldset--impress">
+          <h2 class="form__slogan" >Ваше общее впечатление:</h2>
+          <label class="form__field-radio">
+            <input class="form__field-radio-input" type="radio" name="radio">
+            <span class="form__field-radio-name">Скорее положительное</span>
+          </label>
+          <label class="form__field-radio">
+            <input class="form__field-radio-input" type="radio" name="radio">
+            <span class="form__field-radio-name">Скорее отрицательное</span>
+          </label>
+          <label class="form__field-radio">
+            <input class="form__field-radio-input" type="radio" name="radio">
+            <span class="form__field-radio-name">Затрудняюсь ответить</span>
+          </label>
+        </div>
+        <div class="form__fieldset  form__fieldset--strikes">
+          <h2 class="form__slogan form__slogan--strikers" >Посещенные достопримечательности:</h2>
+          <label class="form__field-checkbox">
+            <input class="form__field-checkbox-input" type="checkbox" name="checkbox">
+            <span class="form__field-checkbox-name">Мост Дьявола</span>
+          </label>
+          <label class="form__field-checkbox">
+            <input class="form__field-checkbox-input" type="checkbox" name="checkbox">
+            <span class="form__field-checkbox-name">Слайд-парк</span>
+          </label>
+          <label class="form__field-checkbox">
+            <input class="form__field-checkbox-input" type="checkbox" name="checkbox">
+            <span class="form__field-checkbox-name">Гора-Колокол</span>
+          </label>
+          <label class="form__field-checkbox">
+            <input class="form__field-checkbox-input" type="checkbox" name="checkbox">
+            <span class="form__field-checkbox-name">Красные скалы</span>
+          </label>
+        </div>
+        <div class="form__fieldset  form__fieldset--emotion">
+          <h2 class="form__slogan" >Опишите свои эмоции:</h2>
+          <textarea class="form__textarea" rows="6">Опишите подробно свои восторги</textarea>
+          <a class="form__btn btn btn--form" href="#closeModal">отправить отзыв</a>
+          <div class="form__other">* — обязательные поля</div>
+        </div>
+      </form>
+
+
+      <footer class="page-footer">
+        <a class="page-footer__name" href="">#VISITSEDONA</a>
+          <ul class="page-footer__social-links">
+            <li class="page-footer__social-links-item">
+              <a href="https://twitter.com" class="page-footer__social-links-a">
+                <svg class="page-footer__svg" width="32" height="32">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-links-item">
+              <a href="https://facebook.com" class="page-footer__social-links-a">
+                <svg class="page-footer__svg" width="32" height="32">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-links-item">
+              <a href="https://youtube.com" class="page-footer__social-links-a">
+                <svg class="page-footer__svg" width="32" height="32">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        <a class="page-footer__developer" href="https://vk.com/flashinthenight">Разработано Vladimir Khrenov 2018</a>
+      </footer>
+    </div>
+  </body>
+
+  <!-- Модальное окно -->
+<div id="closeModal" class="modal-index">
+   <div class="modal-index__container">
+      <a href="#close" class="modal-index__close">X</a>
+      <h2 class="modal-index__name">Ваш отзыв отправлен</h2>
+      <p class="modal-index__slogan">Спасибо за ваше участие, ваш отзыв уже поступил к нам и в ближайшее время мы опубликуем его на сайте.</p>
+   </div>
+</div>
+
+</html>
