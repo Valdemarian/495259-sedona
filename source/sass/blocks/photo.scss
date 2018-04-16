@@ -1,0 +1,226 @@
+.photo{
+  @media (min-width: $screen-md){
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $screen-lg){
+    width: 100%;
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $screen-md){
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__wrapper{
+    margin-top: 20px;
+    border-bottom: 1px solid #D0D0D0;
+    overflow: hidden;
+
+    @media (min-width: $screen-md){
+      margin-top: 0px;
+      border-bottom: none;
+    }
+  }
+
+  &__section {
+    display: block;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+
+    @media (min-width: $screen-md){
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      color: #fff;
+      height: 60px;
+    }
+
+    @media (min-width: $screen-lg){
+      z-index: -1;
+      bottom: -60px;
+      transition: bottom .2s linear;
+      transition:all 0.2s linear;
+    }
+  }
+
+  &__section-hover{
+    @media (min-width: $screen-md){
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+
+  &__wrapper--roud{
+    height: 380px;
+    width: 87%;
+
+    @media (min-width: $screen-md){
+      position: relative;
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  &__wrapper--mount{
+    height: 380px;
+    width: 87%;
+
+    @media (min-width: $screen-md){
+      position: relative;
+      width: 50%;
+      height: 270px;
+    }
+
+    @media (min-width: $screen-lg){
+      width: 33.33%;
+    }
+  }
+
+  &__wrapper--hill{
+    height: 380px;
+    width: 87%;
+
+    @media (min-width: $screen-md){
+      position: relative;
+      width: 50%;
+      height: 270px;
+    }
+
+    @media (min-width: $screen-lg){
+      width: 33.33%;
+    }
+  }
+
+  &__wrapper--bridje{
+    height: 380px;
+    width: 87%;
+
+    @media (min-width: $screen-md){
+      position: relative;
+      width: 100%;
+      height: 270px;
+    }
+
+    @media (min-width: $screen-lg){
+      width: 33.33%;
+    }
+  }
+
+  &__roud{
+    min-height: 280px;
+    min-width: 280px;
+    background: url(../img/photo/roud.jpg) no-repeat center;
+    background-size: cover;
+
+    @media (min-width: $screen-md){
+      height: 400px;
+    }
+  }
+
+  &__mount{
+    min-height: 280px;
+    min-width: 280px;
+    background: url(../img/photo/mount.jpg) no-repeat center;
+    background-size: cover;
+
+    @media (min-width: $screen-md){
+      height: 270px;
+    }
+  }
+
+  &__hill{
+    min-height: 280px;
+    min-width: 280px;
+    background: url(../img/photo/hill.jpg) no-repeat center;
+    background-size: cover;
+
+    @media (min-width: $screen-md){
+      height: 270px;
+    }
+  }
+
+  &__bridje{
+    min-height: 280px;
+    min-width: 280px;
+    background: url(../img/photo/bridje.jpg) no-repeat center;
+    background-size: cover;
+
+    @media (min-width: $screen-md){
+      height: 270px;
+      background: url(../img/main-bridge-desctop@1x.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    @media (min-width: $screen-lg){
+      height: 270px;
+    }
+  }
+
+  &__name{
+    text-align: left;
+    margin: 10px 0;
+    font-family: 'ptsans';
+
+    @media (min-width: $screen-md){
+      margin-top: 0;
+      margin-left: 25px;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+  }
+
+  &__author{
+    float: left;
+    margin: 10px 0;
+    display: inline-block;
+
+    @media (min-width: $screen-md){
+      margin-top: 5px;
+      margin-left: 25px;
+    }
+  }
+
+  &__like{
+    position: relative;
+    float: right;
+    height: 40px;
+    width: 60px;
+
+    @media (min-width: $screen-md){
+      margin-right: 25px;
+    }
+  }
+
+  &__like-svg-on{
+    position: absolute;
+    fill: #858585;
+    left: 0;
+    top: 7px;
+
+    @media (min-width: $screen-md){
+      fill:#fff;
+      top: 3px;
+    }
+  }
+
+  &__like-number{
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+    @media (min-width: $screen-md){
+      top: 5px;
+    }
+  }
+}
+

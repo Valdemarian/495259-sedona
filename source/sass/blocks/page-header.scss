@@ -1,9 +1,14 @@
 .page-header {
+  position: relative;
 
    &__top{
-    height: 100%;
-   }
+    text-align: center;
 
+    @media (max-width: ($screen-md - 1)){
+      display: flex;
+      flex-direction: column;
+    }
+   }
 
   &__bordure{
     display: block;
@@ -17,14 +22,80 @@
     }
   }
 
-
   &__promo {
-    min-height: 388px;
+    position: relative;
+    text-align: center;
+    min-height: 390px;
     min-width: 320px;
     background: $main-color url(../img/bg-back-mobile@1x.jpg) no-repeat center;
+    background-size: cover;
+
+    @media (min-width: $screen-md){
+      min-height: 518px;
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-size: cover;
+    }
+  }
+
+  &__promo--mini{
+    min-height: 250px;
+
+    @media (min-width: $screen-md){
+      min-height: 300px;
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-size: cover;
+    }
+  }
+
+
+&__name{
+  text-transform: uppercase;
+}
+
+  &__promo-svg {
+    width: 50%;
+    margin-top: 90px;
+
+     @media (min-width: $screen-md){
+      margin-top: 75px;
+      width: 45%;
+     }
+
+     @media (min-width: $screen-lg){
+      margin-top: 80px;
+      width: 38%;
+    }
+  }
+
+    &__promo-svg-mini {
+      margin-top: 90px;
+      width: 70%;
+
+     @media (min-width: $screen-md){
+      margin-top: 90px;
+      width: 50%;
+     }
+
+     @media (min-width: $screen-lg){
+      margin-top: 100px;
+      width: 38%;
+    }
+  }
+
+  &__promo-podval {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+    height: 57px;
+    background: url(../img/podval-decktop.svg) no-repeat;
+    background-size: 100%;
   }
 
   &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 220px;
     min-width: 320px;
     background: #fff;

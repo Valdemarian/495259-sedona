@@ -1,24 +1,99 @@
 .promo {
 
-  &__wrapper{
-    @media (min-width: $screen-md) {
-      display: flex;
+  &__trigle-up{
+    position: absolute;
+    top: 105px;
+    width: 80px;
+    height: 2px;
+    background: $main-color;
+    border-radius: 100px / 50px;
+  }
+
+  &__trigle-down{
+    position: absolute;
+    bottom: 30px;
+    width: 0;
+    height: 0;
+    border-top: 25px solid $main-color;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+
+  &__trigle-up--white{
+    margin-top: 15px;
+    width: 80px;
+    height: 2px;
+    background: #fff;
+    border-radius: 100px / 50px;
+  }
+
+  &__trigle-down--white{
+    width: 0;
+    height: 0;
+    border-top: 25px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+
+  &__gradient{
+    background:linear-gradient(to bottom left, #f1f1f1 0%, #fff 60%);
+  }
+
+  &__svg{
+    fill:$main-color;
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
+
+    @media (min-width: $screen-md){
+      margin-top: 20px;
+      height: 100px;
+      width: 100px;
+      transition: transform 0.5s linear;
+
+      &:hover{
+        transform: rotate(1turn);
+      }
     }
   }
 
+  &__wrapper{
+    display: block;
+    @media (min-width: $screen-md) {
+    display: flex;
+    }
+  }
+
+    &__wrapper-zero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      height: 350px;
+    }
+  }
+
+
   &__wrapper--premium {
-    height: 414px;
+    background:linear-gradient(to bottom left, #F2F2F2 0%, #fff 60%);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 
     @media (min-width: $screen-md) {
     height: 328px;
+    flex-direction: row;
     }
   }
 
   &__section {
     margin: 0;
-    min-height: 190px;
-    // min-width: 320px;
-    background: $main-color;
+    min-height: 215px;
+        background: $main-color;
     text-align: center;
     color: #fff;
 
@@ -27,24 +102,85 @@
     }
   }
 
+  &__section-slogan{
+    margin-top: 0;
+  }
+
+  &__section-slogan--val{
+    margin-top: 15px;
+  }
+
+
+  &__section-num{
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  &__podval-bottom-mobile {
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    top: 0;
+    background: url(../img/podval-bottom-mobile.png) no-repeat;
+    background-size: 100%;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__section-name{
+    text-transform: uppercase;
+  }
+
 
   &__section--hotel {
+    min-height: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $screen-md){
+    width: 33.33%;
+    min-height: 260px;
+    }
+  }
+
+  &__section--devil {
+    min-height: 260px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     @media (min-width: $screen-md){
       width: 33.33%;
     }
   }
 
-  &__section--devil {
-    @media (min-width: $screen-md) {
-    width: 33.33%;
-    }
-  }
-
-
   &__section-img-hotel {
     min-height: 260px;
     min-width: 320px;
     background: url(../img/main-city-mobile@1x.jpg) no-repeat center;
+    background-size: cover;
+
+    @media (min-width: $screen-md){
+      flex-grow: 1;
+      background-image: url(../img/main-city-tablet@1x.jpg);
+    }
+
+    @media (min-width: $screen-lg){
+      flex-grow: 1;
+      background-image: url(../img/main-city-desctop@1x.jpg);
+
+        @media (min-resolution: 1.5dppx){
+            background-image: url(../img/main-city-desctop@2x.jpg);
+        }
+    }
   }
 
     &__section-img-devil {
@@ -52,46 +188,133 @@
     min-height: 260px;
     min-width: 320px;
     background: url(../img/main-bridge-mobile@1x.jpg) no-repeat center;
-    margin: 0;
+    background-size: cover;
+
+    @media (min-width: $screen-md){
+      flex-grow: 1;
+      background-image: url(../img/main-bridge-tablet@1x.jpg);
+    }
+
+    @media (min-width: $screen-lg){
+      flex-grow: 1;
+      background-image: url(../img/main-bridge-desctop@1x.jpg);
+
+        @media (min-resolution: 1.5dppx){
+          flex-grow: 1;
+          background-image: url(../img/main-bridge-desctop@2x.jpg);
+        }
+    }
   }
 
 
   &__section--grey {
+    position: relative;
     min-height: 167px;
-    min-width: 320px;
-
+    height: 270px;
+    width: 270px;
     color: #000;
-    background: #EFEFEF;
+    background-color: #fff;
     border-bottom: 1px solid #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 14px rgba(0,0,0,0.3);
+    border-radius:50%;
+    margin: 5%;
+    align-items: center;
 
     @media (min-width: $screen-md){
-      width: 33.33%;
+      margin: 0;
+      transition: transform 0.2s linear;
+
+      &:hover{
+        transform: scale(1.2, 1.2);
+      }
     }
   }
 
   &__inner-block {
-    text-align: left;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    &:first-child{
+      margin-top: 10px;
+      @media (min-width: $screen-md){
+        margin-top: 0;
+      }
+    }
 
     @media (min-width: $screen-md){
       width: 33.33%;
+      flex-direction: column;
+      justify-content: center;
+
     }
   }
 
   &__inner-block-name {
-    margin-left: 70px;
+    align-content: center;
+
+    @media (min-width: $screen-md){
+      margin-left: 0;
+    }
   }
 
   &__inner-block-descr {
-    margin-left: 70px;
+
+    @media (min-width: $screen-md){
+      margin-left: 0;
+    }
+  }
+
+  &__inner-block-icon{
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    align-self: flex-start;
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.3);
+
+    @media (min-width: $screen-md){
+      height: 150px;
+      width: 150px;
+      align-self: center;
+    }
+
+  }
+
+  &__inner-wrapper{
+    text-align: left;
+    min-width: 250px;
+    width: 250px;
+
+    @media (min-width: $screen-md){
+      text-align: center;
+      margin-top: 15px;
+    }
   }
 
   &__hotel {
     text-align: center;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: $screen-md){
+      align-items: center;
+    }
   }
 
   &__map {
-    min-height: 350px;
-    min-width: 320px;
-    background: url(../img/bg-map-mobile@1x.jpg) no-repeat center;
+    width: 100%;
+    height: 350px;
+  }
+
+  &__hotel-name{
+    font-size: 35px;
   }
 }

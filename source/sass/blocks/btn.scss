@@ -1,19 +1,57 @@
 .btn {
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 22px 47px;
+  padding: 22px 27px;
   background-color: $main-color;
   font-weight: bold;
   color: #ffffff;
   display: inline-block;
   margin: 40px;
+  font-size: 18px;
+  font-family: ptsans bold;
+  border-radius: 4px;
+
 
 
   @media (min-width: $screen-md) {
-    width: 60%;
+    width: 40%;
   }
 
   @media (min-width: $screen-lg) {
     width: 33%;
+  }
+
+    &:hover{
+      background-color:#5671D4;
+      box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    }
+
+    &:active{
+      background-color: #B5B5B5;
+    }
+
+    &--modal{
+      width: 75%;
+      border-radius: 3px;
+      margin: 10px;
+      padding: 15px;
+      font-size: 18px ;
+      margin-top: 2px;
+    }
+
+  &--form{
+    padding: 22px 37px;
+    font-size: 15px;
+    border-radius: 3px;
+    @media (min-width: $screen-md){
+      margin: 10px 0;
+      width: 40%;
+    }
+
+    @media (min-width: $screen-lg){
+      margin: 10px 0;
+      width: 40%;
+    }
   }
 }

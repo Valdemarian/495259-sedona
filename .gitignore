@@ -9,4 +9,5 @@ node_modules/
 .publish/
 npm-debug.*
 source/css/*.css
+sourse/img/sprite-svg.svg
 Thumbs.db

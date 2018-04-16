@@ -1,0 +1,100 @@
+.modal-index{
+
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  transition: opacity 4000ms ease-in;
+  display: none;
+  pointer-events: none;
+
+    &:target {
+      display: block;
+      pointer-events: auto;
+    }
+
+  &__container{
+    text-align: center;
+    width: 90%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+    background: #fff;
+
+    @media (min-width: $screen-md) {
+       width: 40%;
+    }
+
+    @media (min-width: $screen-lg) {
+       width: 28%;
+    }
+  }
+
+  &__close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+
+    &:hover{
+      background: $main-color;
+    }
+  }
+
+  &__slogan{
+    text-transform: none;
+    font-size: 16px;
+    margin: 15px 0;
+    margin-bottom: 5px;
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__name{
+    margin-top: 15px;
+    font-size: 25px;
+  }
+
+  &__input{
+    background-color: #F9F9F9;
+    font-family: ptsans;
+    width: 90%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #D0D0D0;
+
+    &:hover{
+      box-shadow: 0 6px 4px -7px rgba(0, 0, 0, .2);
+    }
+  }
+
+  &__date{
+    background-color: #F9F9F9;
+    font-family: ptsans;
+    width: 90%;
+    padding: 9px;
+    border-radius: 3px;
+    border: 1px solid #D0D0D0;
+
+    &:hover{
+      box-shadow: 0 6px 4px -7px rgba(0, 0, 0, .2);
+    }
+  }
+}

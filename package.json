@@ -8,10 +8,14 @@
     "autoprefixer": "7.2.x",
     "browser-sync": "2.23.x",
     "gulp": "3.9.x",
+    "gulp-cheerio": "^0.6.3",
     "gulp-gh-pages": "git+https://github.com/nicothin/gulp-gh-pages.git",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "3.1.x",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -40,7 +44,8 @@
     "node": "8.9"
   },
   "dependencies": {
-    "gulp-wait": "0.0.2"
+    "gulp-wait": "0.0.2",
+    "jquery": "^3.3.1"
   },
   "main": "gulpfile.js",
   "repository": {

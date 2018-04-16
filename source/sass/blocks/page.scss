@@ -1,0 +1,9 @@
+.page{
+  background-color: #fff;
+
+  @media (min-width: $screen-lg){
+    width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+}

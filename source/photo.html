@@ -2,94 +2,199 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="sass/style.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous">
+    </script>
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__top">
-        <a class="logo">
-          <img class="logo__img">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item ">
-              <a class="main-nav__links" href="">Главная</a>
+
+  <script>
+    $(document).ready(function(){
+      var menuLink = $('.menu-link');
+      var link = $('.menu-link__menu-toggle');
+      var menu = $('.main-nav__list')
+
+      menuLink.click(function(){
+        menuLink.toggleClass('menu-link__active');
+        link.toggleClass('menu-link__menu-toggle--active');
+        menu.toggleClass('main-nav__list--active');
+      });
+    });
+
+     $(document).ready(function(){
+      var section = $('.photo__section');
+
+      $('.photo__wrapper--roud').hover(
+        function(){ $('#roud').addClass('photo__section-hover') },
+        function(){ $('#roud').removeClass('photo__section-hover') }
+      );
+      $('.photo__wrapper--mount').hover(
+        function(){ $('#mount').addClass('photo__section-hover') },
+        function(){ $('#mount').removeClass('photo__section-hover') }
+      );
+      $('.photo__wrapper--hill').hover(
+        function(){ $('#hill').addClass('photo__section-hover') },
+        function(){ $('#hill').removeClass('photo__section-hover') }
+      );
+      $('.photo__wrapper--bridje').hover(
+        function(){ $('#bridje').addClass('photo__section-hover') },
+        function(){ $('#bridje').removeClass('photo__section-hover') }
+      );
+    });
+  </script>
+
+    <div class="page">
+      <header class="page-header">
+        <div class="page-header__top">
+            <a class="logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/logo-sedona-decktop.svg">
+                <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="sedona">
+              </picture>
+            </a>
+              <nav class="main-nav">
+                <a class="menu-link" href="#menu">
+                  <span class="menu-link__menu-toggle
+                  "></span>
+                </a>
+                <ul class="main-nav__list">
+                  <li class="main-nav__item ">
+                    <a class="main-nav__links" href="index.html">Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__links" href="photo.html">Фото и видео</a>
+                  </li>
+                  <li class="main-nav__item">
+                  <a class="main-nav__links-free">  </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__links" href="form.html">Форма отзыва</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__links" href="https://vk.com/flashinthenight">VALDEMARIAN</a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-header__promo page-header__promo--mini">
+          <img class="page-header__promo-svg-mini" src="img/text-sedona-mini.svg" alt="">
+          <div class="page-header__promo-podval"></div>
+
+        </div>
+        <div class="page-header__bottom">
+          <h1 class="page-header__name">ФОТО И ВИДЕО</h1>
+          <p class="page-header__name-slogan">Не можете решиться на путешествие из-за курса?<br/>
+Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+      </header>
+
+
+      <main class="photo">
+        <div class="photo__container">
+          <div class="photo__wrapper  photo__wrapper--roud">
+            <div class="photo__roud">
+            </div>
+            <div class="photo__section" id="roud">
+              <h2 class="photo__name">Народные просторы</h2>
+              <div class="photo__author">Автор фото: Борис</div>
+              <div class="photo__like">
+                  <svg class="photo__like-svg-on" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-like"></use>
+                </svg>
+                <span class="photo__like-number"><b>1350</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="photo__wrapper  photo__wrapper--mount">
+            <div class="photo__mount">
+            </div>
+            <div class="photo__section" id="mount">
+              <h2 class="photo__name">Местная растительность</h2>
+              <div class="photo__author">Автор фото: Сергей</div>
+              <div class="photo__like">
+                  <svg class="photo__like-svg-on" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-like"></use>
+                </svg>
+                <span class="photo__like-number"><b>143</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="photo__wrapper  photo__wrapper--hill">
+            <div class="photo__hill">
+            </div>
+            <div class="photo__section" id="hill">
+              <h2 class="photo__name">Дорога на север</h2>
+              <div class="photo__author">Автор фото: Петр</div>
+              <div class="photo__like">
+                  <svg class="photo__like-svg-on" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-like"></use>
+                </svg>
+                <span class="photo__like-number"><b>96</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="photo__wrapper  photo__wrapper--bridje">
+            <div class="photo__bridje">
+            </div>
+            <div class="photo__section" id="bridje">
+              <h2 class="photo__name">Мост дьявола</h2>
+              <div class="photo__author">Автор фото: Антон</div>
+              <div class="photo__like">
+                  <svg class="photo__like-svg-on" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-like"></use>
+                </svg>
+                <span class="photo__like-number"><b>254</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video">
+          <div class="video__block">
+            <div class="video__wrapper">
+              <h2 class="video__name">Все еще сомневаетесь?</h2>
+              <p class="video__slogan">Смотрите видеопрезентацию и скорее за билетами, пока <br/> они не подорожали в очередной раз!</p>
+            </div>
+            <div class="video__img">
+              <iframe class="video__iframe" width="800" height="500" src="https://www.youtube.com/embed/7LzwK2k18Q0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+      <footer class="page-footer">
+        <a class="page-footer__name" href="">#VISITSEDONA</a>
+          <ul class="page-footer__social-links">
+            <li class="page-footer__social-links-item">
+              <a href="https://twitter.com" class="page-footer__social-links-a">
+                <svg class="page-footer__svg" width="32" height="32">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__links" href="photo.html">Фото и видео</a>
+            <li class="page-footer__social-links-item">
+              <a href="https://facebook.com"" class="page-footer__social-links-a">
+                <svg class="page-footer__svg" width="32" height="32">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__links" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__links" href="#">HTML Academy</a>
+            <li class="page-footer__social-links-item">
+              <a href="https://youtube.com" class="page-footer__social-links-a">
+                <svg class="page-footer__svg" width="32" height="32">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-youtube"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-      </div>
-      <div class="page-header__promo">
-        <img src="" alt="">
-      </div>
-      <div class="page-header__bottom">
-        <h1 class="page-header__name">Фото и видео</h1>
-        <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </div>
-    </header>
-
-    <main class="page-main">
-      <div class="photo">
-        <img class="photo__img" src="" alt="">
-        <h2 class="photo__name">Народные просторы</h2>
-        <div class="photo__author">Автор фото: Борис</div>
-        <button class="like">
-          <span class="like__number"><b>1350</b></span>
-        </button>
-      </div>
-      <div class="photo">
-        <img class="photo__img" src="" alt="">
-        <h2 class="photo__name">Местная растительность</h2>
-        <div class="photo__author">Автор фото: Сергей</div>
-        <button class="like">
-          <span class="like__number"><b>143</b></span>
-        </button>
-      </div>
-      <div class="photo">
-        <img class="photo__img" src="" alt="">
-        <h2 class="photo__name">Дорога на север</h2>
-        <div class="photo__author">Автор фото: Петр</div>
-        <button class="like">
-          <span class="like__number"><b>96</b></span>
-        </button>
-      </div>
-      <div class="photo">
-        <img class="photo__img" src="" alt="">
-        <h2 class="photo__name">Мост дьявола</h2>
-        <div class="photo__author">Автор фото: Антон</div>
-        <button class="like">
-          <span class="like__number"><b>254</b></span>
-        </button>
-      </div>
-      <div class="video">
-        <h3 class="video__name">Все еще сомневаетесь?</h3>
-        <p class="video__slogan">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      </div>
-    </main>
-
-    <footer class="page-footer">
-      <a class="page-footer__name" href="">#VISITSEDONA</a>
-      <div class="page-footer__social">
-        <ul class="social-links">
-          <li class="social-links__item"><a href="" class="social-links__link">Мы в Твиттере</a></li>
-          <li class="social-links__item"><a href="" class="social-links__link">Мы в Фейсбук</a></li>
-          <li class="social-links__item"><a href="" class="social-links__link">Мы в Ютуб</a></li>
-        </ul>
-      </div>
-      <div class="page-footer__bottom">
-        <span class="page-footer__developer">разработано</span>
-        <svg class="page-footer__developer-logo"></svg>
-      </div>
-    </footer>
+        <a class="page-footer__developer" href="https://vk.com/flashinthenight">Разработано Vladimir Khrenov 2018</a>
+      </footer>
+    </div>
   </body>
 </html>
